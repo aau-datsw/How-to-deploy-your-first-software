@@ -39,7 +39,7 @@ Now we can access our html file on our domain!!
 
 This only runs, when you're logged into your server, and running the command. If you want it to run forever, when you're not logged in, run the command
 ```properties
-python3 -m http.server -d ./ 80
+python3 -m http.server -d ./ 80 &
 ```
 
 Now you have your first homepage.
