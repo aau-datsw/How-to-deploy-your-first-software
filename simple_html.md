@@ -27,7 +27,7 @@ But we want it on our server. There's multiple ways to get it there. You could u
     ![](services/simple/index_ls.png)
 
 When you go to a webpage like [google.com] we actually just get a file on google's server, just like when you opened the file on your local computer(with a framework, it's a bit more complicated than that). For us to show the `index.html` file, we run:
-```properties
+```bash
 nc -kl 80 < index.html
 ```
 
@@ -38,10 +38,13 @@ Now we can access our html file on our domain!!
 ![](services/simple/html_on_domain.png)
 
 This only runs, when you're logged into your server, and running the command. If you want it to run forever, when you're not logged in, run the command
-```properties
-python3 -m http.server -d ./ 80 &
+```bash
+screen python3 -m http.server -d ./ 80
 ```
+and then press ´ctrl+a+d´. You can now exit your server by typing `exit` and everthung will still run
 
-Now you have your first homepage.
+Now you have your first homepage. 
+
+To get back to your python program type `screen -rx` on your server
 
 
