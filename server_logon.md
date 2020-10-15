@@ -6,7 +6,7 @@ If you are on windows, i recommend you to [install a Ubuntu subsystem](https://u
 The server is essentially just a computer running somewhere in Frankfurt that we can log into. We currently have one user, `root`, and we have received a password in our email. We will log into the server using SSH, which really just enables us to access the server’s terminal through our own.
 
 From your terminal, enter the following: 
-```properties
+```bash
 ssh root@YOUR_IP_ADDRESS
 ```
 ![](assets/getting_a_server/ssh_root.png)
