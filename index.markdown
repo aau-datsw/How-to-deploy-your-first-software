@@ -15,3 +15,7 @@ In layman's terms, it means how to get a server up and running with your softwar
 5. Minor tutorials
     - [Create a GitHub repository](git)
     
+    
+* TOC
+{:toc}
+    
