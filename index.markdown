@@ -14,5 +14,8 @@ In layman's terms, it means how to get a server up and running with your softwar
     
 
 ### Contributers
-- [Anders Brams](https://github.com/Minibrams "Anders Brams's Github Page")
-- [Anders Aaen Springborg](https://github.com/Minibrams "Anders Brams's Github Page")
+[<img src="assets/Octocat.png" height=20px>](https://github.com/Minibrams) 
+[Anders Brams](https://www.linkedin.com/in/anders-brams-b135985a/ "Linkedin Page")
+
+[<img src="assets/Octocat.png" height=20px>](https://github.com/AndersSpringborg) 
+[Anders Aaen Springborg](https://www.linkedin.com/in/anders-aaen-springborg/ "Linkedin Page")
