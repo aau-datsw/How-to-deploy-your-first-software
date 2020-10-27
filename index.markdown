@@ -17,5 +17,5 @@ In layman's terms, it means how to get a server up and running with your softwar
     
 
 ### Contributers
-- :octocat: [Anders Brams](https://github.com/Minibrams "Anders Brams's Github Page")
-- :octocat: [Anders Aaen Springborg](https://github.com/Minibrams "Anders Brams's Github Page")
+- [Anders Brams](https://github.com/Minibrams "Anders Brams's Github Page")
+- [Anders Aaen Springborg](https://github.com/Minibrams "Anders Brams's Github Page")
