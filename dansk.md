@@ -19,19 +19,19 @@ Når du har fået GitHub PRO kan du gå ind på [DigitalOcean](https://www.digit
 
 Hvis du har fulgt instruktionerne rigtigt burde [din projects side](https://cloud.digitalocean.com) se sådan her ud:
 
-![Billede af din DigitalOcean forside](images/digital-ocean-front.png)
+![Billede af din DigitalOcean forside](assets/digital-ocean-front.png)
 
 Klik nu på den grønne create knap, og klik derefter på droplets, så burde du komme ind på denne side:
 
-![Oprettelse af droplet](images/digital-ocean-droplets.png)
+![Oprettelse af droplet](assets/digital-ocean-droplets.png)
 
 Vælg ubuntu, og en basic plan. Derefter rul ned til "Choose a datacenter region", her vælger du Frankfurt:
 
-![Server localition](images/digital-ocean-droplet-location.png)
+![Server localition](assets/digital-ocean-droplet-location.png)
 
 Herefter skal du vælge et password og et navn til din server:
 
-![Valg af password og username](images/digital-ocean-droplet-user-pass.png)
+![Valg af password og username](assets/digital-ocean-droplet-user-pass.png)
 
 Når du har fulgt punkterne her, kan du nederst på siden trykke "Create droplet". Nu har du din egen server!
 
@@ -44,19 +44,19 @@ Opret en konto med din GitHub på [Name.com](https://www.name.com/partner/github
 
 Hvis du har gjort alting rigtigt burde din [account side](https://www.name.com/account) gerne se sådan her ud:
 
-![Din name.com account](images/name-com-account.png)
+![Din name.com account](assets/name-com-account.png)
 
 Klik på dit domæne navn, så får du nogle flere informationer og indstillinger:
 
-![Domæne indstillinger](images/name-com-details.png)
+![Domæne indstillinger](assets/name-com-details.png)
 
 Når du er inde på details siden, så skal du klikke på "Manage DNS Records" under **Domain Details**
 
-![](images/name-com-dns.png)
+![](assets/name-com-dns.png)
 
 Her fortæller du hvilken ip dit domæne skal peje hen på når at folk skriver det ind i deres browser. I feltet **ANSWER** skal du skrive din DigitalOcean Servers IP adresse. Du kan finde IPen under [Droplets](https://cloud.digitalocean.com/droplets) på din DigitalOcean side:
 
-![Droplets liste](images/digital-ocean-droplets-ip.png)
+![Droplets liste](assets/digital-ocean-droplets-ip.png)
 
 Nu kan folk komme ind på din hjemmeside! Nu skal den bare skrives:)
 
@@ -67,7 +67,7 @@ Nu har du lavet en server, en NodeJS application og et domæne. Og nu skal du ha
 
 Du kan oprette forbindelse til din server, ved at skrive `ssh root@mydomain.com` i en terminal. Hvis du bruger windows, kan du bruge PowerShell. Jeg kan anbefale at du installere [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) på din windows maskine:)
 
-![SSH på terminalen](images/ssh.png)
+![SSH på terminalen](assets/ssh.png)
 
 Du vil blive bedt om at skrive adgangskoden til serveren (adgangskoden er den som du lavede til din DigitalOcean Droplet).
 
@@ -75,7 +75,7 @@ Hvis du ser en besked om nogle SSH Keys eller noget lignende når du opretter fo
 
 Når du har oprettet en SSH forbindelse til din server, burde du se noget lignende dette:
 
-![Velkommen besked på SSH forbindelse](images/ssh-connected.png)
+![Velkommen besked på SSH forbindelse](assets/ssh-connected.png)
 
 Nu er du inde på din DigitalOcean Droplet med en SSH forbindelse!
 
