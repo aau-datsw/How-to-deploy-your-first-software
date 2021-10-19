@@ -11,6 +11,7 @@ In layman's terms, it means how to get a server up and running with your softwar
 4. [🇬🇧Running your software](simple_html)
 5. Minor tutorials
     - [🇬🇧Create a GitHub repository](git)
+    - [Dansk](dansk)
     
 
 ### Contributers
