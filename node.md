@@ -36,7 +36,9 @@ Hvis du får et version nummer, er det installeret korrekt.
 PM2
 ---
 
-Det kan være du har flere applicationer, det kan være svært at holde styr på. Derfor installere vi PM2 som er en daemon process manager. Det betyder at du kan køre flere NodeJS servere i baggrunden.
+Det kan være du har flere applicationer, det kan være svært at holde styr på. Derfor installere vi PM2 som er en daemon process manager. Det betyder at du kan køre flere NodeJS servere i baggrunden. PM2 er primært til at kører node i production, da det også giver et dashboard med status på din server, samt mails hvis din server går ned. Et eksempel er fx 
+![image](https://user-images.githubusercontent.com/15074677/138341402-6f5d3da7-2519-453b-b3f8-5564815fc63a.png)
+
 
 Installationen er lige frem:
 
