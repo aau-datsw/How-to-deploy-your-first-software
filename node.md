@@ -17,18 +17,19 @@ I din terminal skal du skrive følgende:
 
 ```bash
 apt install npm
+```
 (undgå at kopiere $)
 
 Hvis den giver dig en error, så prøv at skrive:
 
-```
-$ apt install npm --fix-missing
+```bash
+apt install npm --fix-missing
 ```
 
 Hvis det hele er gået efter planen burde det være installeret nu, du kan tjekke med denne kommando:
 
-```
-$ npm -v
+```bash
+npm -v
 ```
 
 Hvis du får et version nummer, er det installeret korrekt.
@@ -42,8 +43,8 @@ Det kan være du har flere applicationer, det kan være svært at holde styr på
 
 Installationen er lige frem:
 
-```
-$ npm install pm2 -g
+```bash
+npm install pm2 -g
 ```
 
 Dette installere PM2 globalt.
@@ -59,27 +60,27 @@ Installationen til NGINX er lidt mere kompliceret end de andre ting vi har insta
 
 Først navigere til `/etc/apt/sources.list.d/`:
 
-```
-$ cd /etc/apt/sources.list.d/
+```bash
+cd /etc/apt/sources.list.d/
 ```
 
 Opret herefter filen `nginx.list`:
 
-```
-$ touch nginx.list
+```bash
+touch nginx.list
 ```
 
 hvis du nu skriver `ls`, så burde du se filen ovenover.
 
 Gå nu ind i filen med `nano`.
 
-```
-$ nano nginx.list
+```bash
+nano nginx.list
 ```
 
 Sæt nu det her ind og tryk på CRTL + X derefter Y og bagefter ENTER:
 
-```
+```bash
 deb http://nginx.org/packages/ubuntu/ bionic nginx  
 deb-src http://nginx.org/packages/ubuntu/ bionic nginx
 ```
@@ -88,45 +89,45 @@ deb-src http://nginx.org/packages/ubuntu/ bionic nginx
 
 Herefter skal vi tilføje NGINXs repo siging key og installere det:
 
-```
-$ wget --quiet http://nginx.org/keys/nginx_signing.key && sudo apt-key add nginx_signing.key
-$ sudo apt install nginx
+```bash
+wget --quiet http://nginx.org/keys/nginx_signing.key && sudo apt-key add nginx_signing.key
+sudo apt install nginx
 ```
 
 Tjek nu om det er installeret korrekt:
 
-```
-$ nginx -v
+```bash
+nginx -v
 ```
 
 Hvis du får et version nummer, så har er NGINX blevet installeret korrekt. Nu skal du gøre sådan at det starter hver gang system starter. Det gør du sådan her:
 
-```
-$ systemctl status nginx
-$ systemctl enable nginx
-$ systemctl status nginx
+```bash
+systemctl status nginx
+systemctl enable nginx
+systemctl status nginx
 ```
 
 Det vil også være en god idé at opsætte en firewall, det gør vi med UFW(Uncomplicated Firewall):
 
-```
-$ ufw allow 22/tcp
-$ ufw allow 80/tcp
-$ ufw allow 3000/tcp
-$ ufw enable
+```bash
+ufw allow 22/tcp
+ufw allow 80/tcp
+ufw allow 3000/tcp
+ufw enable
 ```
 22: SSH port, 80: HTTP port, 3000: NodeJS port.
 
 Tjek om UFW er blevet aktiveret, med nedstående kommando:
 
-```
-$ ufw status
+```bash
+ufw status
 ```
 
 Nu til det sjove. Vi skal have konfigureret nginx til at reverse proxy til din server, det gør sådan her:
 
-```
-$ nano /etc/nginx/conf.d/sysmon.conf 
+```bash
+nano /etc/nginx/conf.d/sysmon.conf 
 ```
 
 Sæt nu det her ind og gem filen:
@@ -146,8 +147,8 @@ server {
 
 Nu skal vi bare genstarte NGINX:
 
-```
-$ systemctl restart nginx
+```bash
+systemctl restart nginx
 ```
 
 Nu har du sat NGINX op til at reverse proxy til din server:)
@@ -161,28 +162,28 @@ start med at gå til din home folder ved at skrive `cd` i din terminal.
 
 herefter lav en mappe kaldet website:
 
-```
-$ mkdir website
+```bash
+mkdir website
 ```
 
 naviger nu til mappen:
 
-```
-$ cd website
+```bash
+cd website
 ```
 
 Herefter skal vi initialisere et node projekt:
 
-```
-$ npm init -y
+```bash
+npm init -y
 ```
 
 Hvis du nu skriver `ls` vil der være en `package.json` fil, det er her alle dine dependencies og scripts til at køre programmet ligger.
 
 Lav nu en fil kaldet `server.js`:
 
-```
-$ touch server.js
+```bash
+touch server.js
 ```
 
 Ændre nu `"main":"index.js"` i `package.json` til `"main":"server.js"`. og når vi nu er i gang, skal du også lige ændre:
@@ -202,7 +203,7 @@ $ touch server.js
 
 Herefter skal vi hente nogle dependencies til din server, skriv følgende i din terminal:
 
-```
+```bash
 npm i -D nodemon
 npm i express
 ```
@@ -225,8 +226,8 @@ app.listen(port, () => console.log(`My first NodeJS app runnig on: http://localh
 
 Når du har gemt filen kan du nu starte din app med PM2:
 
-```
-$ pm2 start server.js
+```bash
+pm2 start server.js
 ```
 
 Nu burde du se en tabel med din server i. Prøv nu at skrive dit domæne ind i din browser, du skulle meget gerne se teksten "Hello World!".
