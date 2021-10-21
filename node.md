@@ -235,7 +235,7 @@ Hvis du gerne vil skrive en HTML fil og tilføje noget CSS og JavaScript, så ka
 
 Her er et mit eksempel på en hjemmeside jeg har lavet i mens jeg skrev denne guide [mjhcsoftware.engineer](http://mjhcsoftware.engineer/).
 
-Hvis du vil servere flere HTML dokumenter end en index.html, kan jeg anbefale at bruge [EJS](https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application), da express ikke helt kan finde ud af at servere flere end en HTML fil, uden at bruge en view engine...
+Hvis du vil servere flere HTML dokumenter end en index.html, kan jeg anbefale at bruge [EJS](https://www.digitalocean.com/community/tutorials/how-to-use-ejs-to-template-your-node-application), da express ikke helt kan finde ud af at servere flere end en HTML fil, uden at bruge en view engine. Normalt er express brugt til at lave backends, hvorimod hvis man gerne vil lave hjemmesider, bruger man et framework som `Angular`, `react` eller `vue`.
 
 Hvis du har problemer med at få din server op at køre, kan du bare pinge mig på Ruslan 2021 Discord Serveren: @DISPLAY#8252
 
