@@ -15,9 +15,8 @@ Vi starter med NPM:
 
 I din terminal skal du skrive følgende:
 
-```
-$ apt install npm
-```
+```bash
+apt install npm
 (undgå at kopiere $)
 
 Hvis den giver dig en error, så prøv at skrive:
