@@ -18,7 +18,6 @@ I din terminal skal du skrive følgende:
 ```bash
 apt install npm
 ```
-(undgå at kopiere $)
 
 Hvis den giver dig en error, så prøv at skrive:
 
